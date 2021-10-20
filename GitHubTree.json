@@ -6,7 +6,7 @@
 	},
 	"item": [
 		{
-			"name": "Quotes API",
+			"name": "GitHub API",
 			"event": [
 				{
 					"listen": "test",
