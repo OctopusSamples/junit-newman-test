@@ -29,7 +29,7 @@
         "method": "GET",
         "header": [],
         "url": {
-          "raw": "https://api.github.com/repos/mcasperson/junit-newman-test/git/trees/master?recursive=1"",
+          "raw": "https://api.github.com/repos/mcasperson/junit-newman-test/git/trees/master?recursive=1",
           "protocol": "http",
           "host": [
             "api",
