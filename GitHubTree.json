@@ -12,7 +12,7 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"response must be valid and have a body\"",
+							"pm.test(\"response must be valid and have a body\", ",
 							"function () {\n",
 							" pm.response.to.be.ok;\n",
 							" pm.response.to.be.withBody;\n",
