@@ -29,15 +29,20 @@
         "method": "GET",
         "header": [],
         "url": {
-          "raw": "http://webapp.frontend-development/api/quote",
+          "raw": "https://api.github.com/repos/mcasperson/junit-newman-test/git/trees/master?recursive=1"",
           "protocol": "http",
           "host": [
-            "webapp",
-            "frontend-development"
+            "api",
+            "github",
+            "com"
           ],
           "path": [
-            "api",
-            "quote"
+            "repos",
+            "mcasperson",
+            "junit-newman-test",
+            "git",
+            "trees",
+            "master"
           ]
         }
       },
