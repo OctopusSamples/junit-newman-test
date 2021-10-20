@@ -1,0 +1,47 @@
+{
+  "info": {
+    "_postman_id": "2c6a5ce5-e2af-4f23-ab6c-172d0dfa3797",
+    "name": "RandomQuotes",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Quotes API",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"response must be valid and have a body\"",
+              "function () {\n",
+              " pm.response.to.be.ok;\n",
+              " pm.response.to.be.withBody;\n",
+              " pm.response.to.be.json;\n",
+              "\n",
+              " pm.expect(pm.response.json().quote != \"\").to.be.true;\n",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://webapp.frontend-development/api/quote",
+          "protocol": "http",
+          "host": [
+            "webapp",
+            "frontend-development"
+          ],
+          "path": [
+            "api",
+            "quote"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
