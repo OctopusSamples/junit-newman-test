@@ -1,52 +1,52 @@
 {
-  "info": {
-    "_postman_id": "2c6a5ce5-e2af-4f23-ab6c-172d0dfa3797",
-    "name": "RandomQuotes",
-    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
-  },
-  "item": [
-    {
-      "name": "Quotes API",
-      "event": [
-        {
-          "listen": "test",
-          "script": {
-            "exec": [
-              "pm.test(\"response must be valid and have a body\"",
-              "function () {\n",
-              " pm.response.to.be.ok;\n",
-              " pm.response.to.be.withBody;\n",
-              " pm.response.to.be.json;\n",
-              "\n",
-              " pm.expect(pm.response.json().quote != \"\").to.be.true;\n",
-              "});"
-            ],
-            "type": "text/javascript"
-          }
-        }
-      ],
-      "request": {
-        "method": "GET",
-        "header": [],
-        "url": {
-          "raw": "https://api.github.com/repos/mcasperson/junit-newman-test/git/trees/master?recursive=1",
-          "protocol": "http",
-          "host": [
-            "api",
-            "github",
-            "com"
-          ],
-          "path": [
-            "repos",
-            "mcasperson",
-            "junit-newman-test",
-            "git",
-            "trees",
-            "master"
-          ]
-        }
-      },
-      "response": []
-    }
-  ]
+	"info": {
+		"_postman_id": "f9b1443b-c23d-4738-901d-092cba2fc3d6",
+		"name": "RandomQuotes Copy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Quotes API",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"response must be valid and have a body\"",
+							"function () {\n",
+							" pm.response.to.be.ok;\n",
+							" pm.response.to.be.withBody;\n",
+							" pm.response.to.be.json;\n",
+							"\n",
+							" pm.expect(pm.response.json().quote != \"\").to.be.true;\n",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://api.github.com/repos/mcasperson/junit-newman-test/git/trees/master",
+					"protocol": "http",
+					"host": [
+						"api",
+						"github",
+						"com"
+					],
+					"path": [
+						"repos",
+						"mcasperson",
+						"junit-newman-test",
+						"git",
+						"trees",
+						"master"
+					]
+				}
+			},
+			"response": []
+		}
+	]
 }
